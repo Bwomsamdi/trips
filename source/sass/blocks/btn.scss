@@ -1,7 +1,12 @@
 .btn {
   display: inline-flex;
-  padding: 10px 20px;
+  min-width: 220px;
+  justify-content: center;
+  padding: 20px;
 
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
   color: $color-default-white;
 
   background-color: $color-neon-blue;

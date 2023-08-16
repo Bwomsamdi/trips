@@ -37,9 +37,14 @@
 }
 
 // Desktop first
+@mixin vp-1440 {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
 
 @mixin vp-1200 {
-  @media (min-width: 1200px) {
+  @media (min-width: 1200px) and (max-width: 1439px) {
     @content;
   }
 }
