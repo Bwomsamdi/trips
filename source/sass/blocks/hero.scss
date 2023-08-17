@@ -134,3 +134,39 @@
     background: transparent url("../img/sprite/play3.svg") no-repeat;
   }
 }
+
+.hero__image-wrapper {
+  @media (min-width: 1200px) {
+    position: absolute;
+    width: 410px;
+    height: 459px;
+    bottom: 100px;
+    right: 0;
+  }
+
+  @media (min-width: $vp-768) and (max-width: 1199px) {
+    position: absolute;
+    width: 442px;
+    height: 365px;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: auto;
+    bottom: 100px;
+  }
+}
+
+.hero__slider-wrapper .swiper-pagination-bullet {
+  background-color: transparent;
+  border: 1px solid $color-default-white;
+  opacity: 1;
+}
+
+.hero__slider-wrapper .swiper-pagination-bullet-active {
+  background-color: $color-default-white;
+}
+
+.hero__slider-wrapper .swiper-pagination {
+  text-align: right;
+  bottom: 27px;
+}

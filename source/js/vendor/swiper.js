@@ -10175,6 +10175,30 @@ const swiper = () => {
     return Swiper;
   });
   //# sourceMappingURL=swiper-bundle.js.map
+
+  const swiperBlock = new Swiper('[data-id="swiper-hero"]', {
+    loop: !0,
+    slidesPerView: 1,
+    slidesPerColumn: 1,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true
+    },
+    allowTouchMove:false,
+  });
+
+  swiperBlock.on('transitionEnd', function(e) {
+    if (this.realIndex == 0) {
+      document.querySelector(".hero").style.backgroundImage = "url('../img/hero1.jpg')";
+    }
+    if (this.realIndex == 1) {
+      document.querySelector(".hero").style.backgroundImage = "url('../img/hero2.jpg')";
+    }
+    if (this.realIndex == 2) {
+      document.querySelector(".hero").style.backgroundImage = "url('../img/hero3.jpg')";
+    }
+  });
+  swiper.transitionEnd();
 };
 
 export default swiper();
