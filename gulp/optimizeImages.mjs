@@ -2,7 +2,7 @@ import gulp from 'gulp';
 import rename from 'gulp-rename';
 import imagemin from 'gulp-imagemin';
 import webp from 'gulp-webp';
-import svgstore from 'gulp-svgstore';
+import { stacksvg } from 'gulp-stacksvg';
 import pngQuant from 'imagemin-pngquant';
 import mozJpeg from 'imagemin-mozjpeg';
 import svgo from 'imagemin-svgo';
@@ -10,7 +10,7 @@ import svgo from 'imagemin-svgo';
 const sprite = () =>
   gulp
       .src('source/img/sprite/*.svg')
-      .pipe(svgstore({inlineSvg: true}))
+      .pipe(stacksvg({ output: 'sprite.svg' }))
       .pipe(rename('sprite.svg'))
       .pipe(gulp.dest('build/img'));
 

@@ -21,7 +21,7 @@
             <div class="header__wrapper">
 
               <!-- Внимание! Мобильное меню работоспособно при отключённом JavaScript, для этого нужно проставить модификатор navigation--nojs -->
-              <nav class="navigation navigation--opened">
+              <nav class="navigation navigation--closed">
                 <button class="navigation__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
                 <a class="navigation__logo" href="index.html">
                   <picture>
@@ -134,9 +134,8 @@
                             Легкая сложность</li>
                         </ul>
                       </div>
-                      <div class="hero__video-wrapper">
-                        <div class="hero__video" data-title="hero-video"></div>
-                        <button class="hero__video-button" data-id="btn-video"><span class="visually-hidden">Запустить видео.</span></button>
+                      <div class="hero__audio-wrapper">
+                        <iframe frameborder="0" style="border:none;width:340px;height:220px;" src="https://music.yandex.ru/iframe/#album/25474374">Слушайте <a href='https://music.yandex.ru/album/25474374'>Про код</a> на Яндекс Музыке</iframe>
                       </div>
                     </div>
                   </div>
@@ -148,6 +147,190 @@
         </div>
       </header>
       <main>
+        <section class="tours">
+          <div class="container">
+            <h2>Ближайшие туры</h2>
+            <div class="tours__wrapper">
+              <div class="swiper" data-id="swiper-tours">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-wrapper">
+                  <div class="tours__slide swiper-slide">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/photo1-mobile.webp 1x, img/photo1-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/photo1-tablet.webp 1x, img/photo1-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/photo1.webp 1x, img/photo1@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/photo1-mobile.jpg 1x, img/photo1-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1199px)" srcset="img/photo1-tablet.jpg 1x, img/photo1-tablet@2x.jpg 2x">
+                      <img
+                        src="img/photo1.jpg"
+                        srcset="img/photo1@2x.jpg 2x"
+                        width="380"
+                        height="412"
+                        alt="Фото Эльбруса.">
+                    </picture>
+                    <div class="tours__description-wrapper">
+                      <ul>
+                        <li><svg aria-hidden="true" focusable="false" width="12" height="12">
+                          <use href="img/sprite.svg#pin"></use></svg>Кавказ</li>
+                        <li><svg aria-hidden="true" focusable="false" width="12" height="12">
+                          <use href="img/sprite.svg#sun"></use></svg>4 дня</li>
+                        <li><svg aria-hidden="true" focusable="false" width="12" height="12">
+                          <use href="img/sprite.svg#moon"></use></svg>3 ночи</li>
+                      </ul>
+                      <h3>Путешествие<br>вокруг Эльбруса</h3>
+                      <dl>
+                        <dt>Сложность:</dt>
+                        <dd></dd>
+                        <dt>Даты набора:</dt>
+                        <dd>12.06-19.06</dd>
+                        <dt>Группа:</dt>
+                        <dd>до 15 чел.</dd>
+                      </dl>
+                    </div>
+                  </div>
+                  <div class="tours__slide swiper-slide">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/photo2-mobile.webp 1x, img/photo2-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/photo2-tablet.webp 1x, img/photo2-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/photo2.webp 1x, img/photo2@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/photo2-mobile.jpg 1x, img/photo2-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1199px)" srcset="img/photo2-tablet.jpg 1x, img/photo2-tablet@2x.jpg 2x">
+                      <img
+                        src="img/photo2.jpg"
+                        srcset="img/photo2@2x.jpg 2x"
+                        width="380"
+                        height="412"
+                        alt="Фото Белухи.">
+                    </picture>
+                    <div class="tours__description-wrapper">
+                      <ul>
+                        <li><svg aria-hidden="true" focusable="false" width="12" height="12">
+                          <use href="img/sprite.svg#pin"></use></svg>Алтай</li>
+                        <li><svg aria-hidden="true" focusable="false" width="12" height="12">
+                          <use href="img/sprite.svg#sun"></use></svg>14 дней</li>
+                        <li><svg aria-hidden="true" focusable="false" width="12" height="12">
+                          <use href="img/sprite.svg#moon"></use></svg>13 ночей</li>
+                      </ul>
+                      <h3>Путь к подножию<br>Белухи</h3>
+                      <dl>
+                        <dt>Сложность:</dt>
+                        <dd></dd>
+                        <dt>Даты набора:</dt>
+                        <dd>14.06-23.06</dd>
+                        <dt>Группа:</dt>
+                        <dd>до 25 чел.</dd>
+                      </dl>
+                    </div>
+                  </div>
+                  <div class="tours__slide swiper-slide">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/photo3-mobile.webp 1x, img/photo3-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/photo3-tablet.webp 1x, img/photo3-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/photo3.webp 1x, img/photo3@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/photo3-mobile.jpg 1x, img/photo3-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1199px)" srcset="img/photo3-tablet.jpg 1x, img/photo3-tablet@2x.jpg 2x">
+                      <img
+                        src="img/photo3.jpg"
+                        srcset="img/photo3@2x.jpg 2x"
+                        width="380"
+                        height="412"
+                        alt="Фото Фишта.">
+                    </picture>
+                    <div class="tours__description-wrapper">
+                      <ul>
+                        <li><svg aria-hidden="true" focusable="false" width="12" height="12">
+                          <use href="img/sprite.svg#pin"></use></svg>Адыгея</li>
+                        <li><svg aria-hidden="true" focusable="false" width="12" height="12">
+                          <use href="img/sprite.svg#sun"></use></svg>7 дней</li>
+                        <li><svg aria-hidden="true" focusable="false" width="12" height="12">
+                          <use href="img/sprite.svg#moon"></use></svg>6 ночей</li>
+                      </ul>
+                      <h3>Через Фишт<br>к Черному морю</h3>
+                      <dl>
+                        <dt>Сложность:</dt>
+                        <dd></dd>
+                        <dt>Даты набора:</dt>
+                        <dd>15.07-19.07</dd>
+                        <dt>Группа:</dt>
+                        <dd>до 22 чел.</dd>
+                      </dl>
+                    </div>
+                  </div>
+                  <div class="tours__slide swiper-slide">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/photo1-mobile.webp 1x, img/photo1-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/photo1-tablet.webp 1x, img/photo1-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/photo1.webp 1x, img/photo1@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/photo1-mobile.jpg 1x, img/photo1-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1199px)" srcset="img/photo1-tablet.jpg 1x, img/photo1-tablet@2x.jpg 2x">
+                      <img
+                        src="img/photo1.jpg"
+                        srcset="img/photo1@2x.jpg 2x"
+                        width="380"
+                        height="412"
+                        alt="Фото Эльбруса.">
+                    </picture>
+                    <div class="tours__description-wrapper">
+                      <ul>
+                        <li><svg aria-hidden="true" focusable="false" width="12" height="12">
+                          <use href="img/sprite.svg#pin"></use></svg>Кавказ</li>
+                        <li><svg aria-hidden="true" focusable="false" width="12" height="12">
+                          <use href="img/sprite.svg#sun"></use></svg>4 дня</li>
+                        <li><svg aria-hidden="true" focusable="false" width="12" height="12">
+                          <use href="img/sprite.svg#moon"></use></svg>3 ночи</li>
+                      </ul>
+                      <h3>Путешествие<br>вокруг Эльбруса</h3>
+                      <dl>
+                        <dt>Сложность:</dt>
+                        <dd></dd>
+                        <dt>Даты набора:</dt>
+                        <dd>12.06-19.06</dd>
+                        <dt>Группа:</dt>
+                        <dd>до 15 чел.</dd>
+                      </dl>
+                    </div>
+                  </div>
+                  <div class="tours__slide swiper-slide">
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/photo1-mobile.webp 1x, img/photo1-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1199px)" srcset="img/photo1-tablet.webp 1x, img/photo1-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/photo1.webp 1x, img/photo1@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/photo1-mobile.jpg 1x, img/photo1-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1199px)" srcset="img/photo1-tablet.jpg 1x, img/photo1-tablet@2x.jpg 2x">
+                      <img
+                        src="img/photo1.jpg"
+                        srcset="img/photo1@2x.jpg 2x"
+                        width="380"
+                        height="412"
+                        alt="Фото Эльбруса.">
+                    </picture>
+                    <div class="tours__description-wrapper">
+                      <ul>
+                        <li><svg aria-hidden="true" focusable="false" width="12" height="12">
+                          <use href="img/sprite.svg#pin"></use></svg>Кавказ</li>
+                        <li><svg aria-hidden="true" focusable="false" width="12" height="12">
+                          <use href="img/sprite.svg#sun"></use></svg>4 дня</li>
+                        <li><svg aria-hidden="true" focusable="false" width="12" height="12">
+                          <use href="img/sprite.svg#moon"></use></svg>3 ночи</li>
+                      </ul>
+                      <h3>Путешествие<br>вокруг Эльбруса</h3>
+                      <dl>
+                        <dt>Сложность:</dt>
+                        <dd></dd>
+                        <dt>Даты набора:</dt>
+                        <dd>12.06-19.06</dd>
+                        <dt>Группа:</dt>
+                        <dd>до 15 чел.</dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="tours__link" href="#">Показать все туры</a>
+          </div>
+        </section>
         <section class="intro">
           <div class="container">
             <h1>Тестовая страница.</h1>

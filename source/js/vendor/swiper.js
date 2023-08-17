@@ -10199,6 +10199,28 @@ const swiper = () => {
     }
   });
   swiper.transitionEnd();
+
+  const swiperBlock2 = new Swiper('[data-id="swiper-tours"]', {
+    breakpoints: {
+      320: {
+          slidesPerView: 1,
+          slidesPerColumn: 1,
+      },
+      768: {
+          slidesPerView: 2,
+          spaceBetween: 18
+      },
+      1200: {
+          slidesPerView: 3,
+          spaceBetween: 30
+      }
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    allowTouchMove:false,
+  });
 };
 
 export default swiper();
