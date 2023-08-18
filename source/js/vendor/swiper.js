@@ -10187,19 +10187,6 @@ const swiper = () => {
     allowTouchMove:false,
   });
 
-  swiperBlock.on('transitionEnd', function(e) {
-    if (this.realIndex == 0) {
-      document.querySelector(".hero").style.backgroundImage = "url('../img/hero1.jpg')";
-    }
-    if (this.realIndex == 1) {
-      document.querySelector(".hero").style.backgroundImage = "url('../img/hero2.jpg')";
-    }
-    if (this.realIndex == 2) {
-      document.querySelector(".hero").style.backgroundImage = "url('../img/hero3.jpg')";
-    }
-  });
-  swiper.transitionEnd();
-
   const swiperBlock2 = new Swiper('[data-id="swiper-tours"]', {
     breakpoints: {
       320: {
@@ -10221,6 +10208,19 @@ const swiper = () => {
     },
     allowTouchMove:false,
   });
+
+  swiperBlock.on('transitionEnd', function(e) {
+    if (this.realIndex == 0) {
+      document.querySelector(".hero").style.backgroundImage = "url('../img/hero1.jpg')";
+    }
+    if (this.realIndex == 1) {
+      document.querySelector(".hero").style.backgroundImage = "url('../img/hero2.jpg')";
+    }
+    if (this.realIndex == 2) {
+      document.querySelector(".hero").style.backgroundImage = "url('../img/hero3.jpg')";
+    }
+  });
+
 };
 
 export default swiper();
