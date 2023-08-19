@@ -2989,6 +2989,147 @@ button,
   margin-left: 12px;
 }
 
+.training {
+  position: relative;
+  padding: 100px 0;
+}
+
+.training h2 {
+  position: relative;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 58px;
+}
+@media screen and (max-width: 1199px) {
+  .training h2 {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .training h2 {
+    font-size: 22px;
+    margin-right: 56px;
+  }
+}
+
+.training h2::after {
+  content: "Обучение";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 1;
+  opacity: 0.03;
+}
+@media screen and (max-width: 1199px) {
+  .training h2::after {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .training h2::after {
+    font-size: 26px;
+  }
+}
+
+.training .swiper-button-prev,
+.training .swiper-button-next {
+  width: 37px;
+  height: 35px;
+  background-color: #0266c1;
+}
+
+.training .swiper-button-prev {
+  top: -70px;
+  left: auto;
+  right: 40px;
+}
+
+.training .swiper-button-next {
+  top: -70px;
+  left: auto;
+  right: 0;
+}
+
+.training .swiper-button-prev::after {
+  color: transparent;
+  background-image: url("../img/sprite.svg#left");
+  width: 14px;
+}
+
+.training .swiper-button-next::after {
+  color: transparent;
+  background-image: url("../img/sprite.svg#left");
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  width: 14px;
+}
+
+.training__wrapper {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.training .swiper {
+  position: static;
+}
+
+.training__slide {
+  position: relative;
+}
+
+.training__description-wrapper {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 380px;
+  padding: 28px 20px;
+  color: #ffffff;
+  background: var(--overlay-60, linear-gradient(0deg, rgba(0, 0, 0, 0.4) 61.9%, rgba(0, 0, 0, 0) 100%));
+  overflow-y: auto;
+}
+@media (min-width: 1200px) and (max-width: 1439px) {
+  .training__description-wrapper {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .training__description-wrapper {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .training__description-wrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .training__slide img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .training__slide img {
+    width: 100%;
+  }
+}
+
+.tours__description-wrapper h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 767px) {
+  .tours__description-wrapper h3 {
+    font-size: 20px;
+  }
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
