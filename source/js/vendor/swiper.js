@@ -10209,6 +10209,28 @@ const swiper = () => {
     allowTouchMove:false,
   });
 
+  const swiperBlock3 = new Swiper('[data-id="swiper-training"]', {
+    breakpoints: {
+      320: {
+          slidesPerView: 1,
+          slidesPerColumn: 1,
+      },
+      768: {
+          slidesPerView: 3,
+          spaceBetween: 18
+      },
+      1200: {
+          slidesPerView: 4,
+          spaceBetween: 30
+      }
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    allowTouchMove:false,
+  });
+
   swiperBlock.on('transitionEnd', function(e) {
     if (this.realIndex == 0) {
       document.querySelector(".hero").style.backgroundImage = "url('../img/hero1.jpg')";

@@ -2712,6 +2712,7 @@ button,
   height: 1364px;
   right: 0;
   top: -30px;
+  z-index: -1;
 }
 @media screen and (max-width: 1199px) {
   .tours::after {
