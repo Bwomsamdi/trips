@@ -77,6 +77,7 @@ ul {
 h1,
 h2,
 h3,
+h4,
 p,
 dl,
 dd {
@@ -2740,12 +2741,13 @@ button,
 @media screen and (max-width: 1199px) {
   .tours h2 {
     font-size: 25px;
+    margin-bottom: 46px;
   }
 }
 @media screen and (max-width: 767px) {
   .tours h2 {
     font-size: 22px;
-    margin-right: 56px;
+    margin-bottom: 28px;
   }
 }
 
@@ -2994,22 +2996,30 @@ button,
   padding: 100px 0;
 }
 
+.training .container {
+  padding: 0;
+}
+
 .training h2 {
   position: relative;
   font-size: 35px;
   font-weight: 800;
   line-height: 1;
-  margin-bottom: 58px;
+  margin-bottom: 37px;
+  padding: 0 120px;
 }
 @media screen and (max-width: 1199px) {
   .training h2 {
     font-size: 25px;
+    margin-bottom: 26px;
+    padding: 0 45px;
   }
 }
 @media screen and (max-width: 767px) {
   .training h2 {
     font-size: 22px;
-    margin-right: 56px;
+    margin-bottom: 18px;
+    padding: 0 15px;
   }
 }
 
@@ -3022,15 +3032,63 @@ button,
   font-weight: 800;
   line-height: 1;
   opacity: 0.03;
+  padding: 0 120px;
 }
 @media screen and (max-width: 1199px) {
   .training h2::after {
     font-size: 40px;
+    padding: 0 45px;
   }
 }
 @media screen and (max-width: 767px) {
   .training h2::after {
     font-size: 26px;
+    padding: 0 15px;
+  }
+}
+
+.training p {
+  font-size: 16px;
+  line-height: 24px;
+  max-width: 920px;
+  margin-bottom: 47px;
+  padding-left: 120px;
+}
+@media screen and (max-width: 1199px) {
+  .training p {
+    max-width: 630px;
+    margin-bottom: 55px;
+    padding-left: 45px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .training p {
+    font-size: 14px;
+    line-height: 20px;
+    max-width: 100%;
+    margin-bottom: 37px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.training h3 {
+  font-size: 21px;
+  line-height: 1;
+  margin-bottom: 44px;
+  padding: 0 120px;
+}
+@media screen and (max-width: 1199px) {
+  .training h3 {
+    font-size: 18px;
+    margin-bottom: 34px;
+    padding: 0 45px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .training h3 {
+    font-size: 16px;
+    padding: 0 15px;
   }
 }
 
@@ -3071,24 +3129,42 @@ button,
 .training__wrapper {
   position: relative;
   margin-bottom: 50px;
+  padding: 0 120px;
+}
+@media screen and (max-width: 1199px) {
+  .training__wrapper {
+    padding: 0 45px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .training__wrapper {
+    padding: 0 15px;
+  }
 }
 
 .training .swiper {
   position: static;
+  -webkit-box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
+          box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
+  height: 100%;
 }
 
 .training__slide {
-  position: relative;
+  padding: 20px;
+  border: 1px solid #ffffff;
+  -webkit-box-shadow: 5px 0 40px 5px rgba(28, 51, 116, 0.1);
+          box-shadow: 5px 0 40px 5px rgba(28, 51, 116, 0.1);
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .training__description-wrapper {
-  display: block;
-  position: absolute;
-  bottom: 0;
-  width: 380px;
-  padding: 28px 20px;
-  color: #ffffff;
-  background: var(--overlay-60, linear-gradient(0deg, rgba(0, 0, 0, 0.4) 61.9%, rgba(0, 0, 0, 0) 100%));
   overflow-y: auto;
 }
 @media (min-width: 1200px) and (max-width: 1439px) {
@@ -3107,6 +3183,9 @@ button,
   }
 }
 
+.training__slide img {
+  margin-bottom: 15px;
+}
 @media screen and (max-width: 1199px) {
   .training__slide img {
     width: 100%;
@@ -3118,16 +3197,200 @@ button,
   }
 }
 
-.tours__description-wrapper h3 {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 28px;
-  margin-bottom: 20px;
+.training__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.training__title a {
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgba(2, 102, 193, 0.1);
+  text-align: center;
+  padding-top: 2px;
+}
+
+.training__description-wrapper h4 {
+  line-height: 22px;
+  margin-bottom: 14px;
+}
+
+.training__description-wrapper p {
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.training__roadmap ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 120px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid rgba(2, 102, 193, 0.2);
+}
+@media screen and (max-width: 1199px) {
+  .training__roadmap ul {
+    width: 100%;
+    padding: 0 45px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (50%)[2];
+    grid-template-columns: repeat(2, 50%);
+    -ms-grid-rows: (auto)[2];
+    grid-template-rows: repeat(2, auto);
+    row-gap: 91px;
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
+    border-bottom: none;
+  }
 }
 @media screen and (max-width: 767px) {
-  .tours__description-wrapper h3 {
-    font-size: 20px;
+  .training__roadmap ul {
+    position: relative;
+    padding: 0 15px 0 52px;
+    display: block;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .training__roadmap ul::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 85%;
+    top: 15px;
+    left: 24px;
+    background-color: rgba(2, 102, 193, 0.2);
+  }
+}
+
+.training__roadmap li {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
+  line-height: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 1199px) {
+  .training__roadmap li {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .training__roadmap li {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 25px;
+  }
+}
+
+.training__roadmap span {
+  max-width: 277px;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .training__roadmap li:last-of-type {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 2/1/3/2;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .training__roadmap li:first-of-type::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: -13px;
+    background-color: rgba(2, 102, 193, 0.2);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .training__roadmap li:last-of-type::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    top: -13px;
+    background-color: rgba(2, 102, 193, 0.2);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .training__roadmap .training__boots::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 130%;
+    bottom: -80px;
+    left: 7px;
+    background-color: rgba(2, 102, 193, 0.2);
+  }
+}
+
+.training__roadmap div::before {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  bottom: -39px;
+  background-color: #0266c1;
+  border-radius: 50%;
+}
+@media screen and (max-width: 1199px) {
+  .training__roadmap div::before {
+    bottom: -20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .training__roadmap div::before {
+    left: -34px;
+    bottom: 30%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .training__roadmap div.training__pine-tree::before,
+.training__roadmap div.training__mountain::before {
+    top: -20px;
+  }
+}
+
+.training__roadmap div {
+  width: 25px;
+  margin-right: 15px;
+}
+@media screen and (max-width: 767px) {
+  .training__roadmap div {
+    margin-right: 12px;
+  }
+}
+
+.training__boots {
+  padding-top: 3px;
 }
 
 /* @mixin hover-focus {
