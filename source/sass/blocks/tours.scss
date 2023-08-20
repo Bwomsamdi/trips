@@ -26,6 +26,20 @@
   }
 }
 
+.tours::before {
+  content: url("../img/clouds2.webp");
+  position: absolute;
+  width: 418px;
+  height: 279px;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+
+  @media screen and (max-width: 1199px) {
+    @include visually-hidden();
+  }
+}
+
 .tours h2 {
   position: relative;
   font-size: 35px;

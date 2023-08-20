@@ -1,0 +1,115 @@
+.gallery {
+  //position: relative;
+  padding: 100px 0;
+}
+
+.gallery h2 {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 27px;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 25px;
+    margin-bottom: 26px;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+}
+
+.gallery h2::after {
+  content: "Преимущества";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 1;
+  opacity: 0.03;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 40px;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 26px;
+  }
+}
+
+.gallery p {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 45px;
+
+  @media screen and (max-width: 1199px) {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 36px;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 64px;
+  }
+}
+
+.gallery__wrapper .swiper {
+  text-align: center;
+  overflow: visible;
+  z-index: 2;
+}
+
+.gallery .swiper-button-prev,
+.gallery .swiper-button-next {
+  width: 37px;
+  height: 35px;
+  background-color: $color-neon-blue;
+}
+
+.gallery .swiper-button-prev {
+  top: -70px;
+  left: auto;
+  right: 40px;
+}
+
+.gallery .swiper-button-next {
+  top: -70px;
+  left: auto;
+  right: 0;
+}
+
+.gallery .swiper-button-prev::after {
+  color: transparent;
+  background-image: url("../img/sprite.svg#left");
+  width: 14px;
+}
+
+.gallery .swiper-button-next::after {
+  color: transparent;
+  background-image: url("../img/sprite.svg#left");
+  transform: rotate(180deg);
+  width: 14px;
+}
+
+.gallery .swiper-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  width: auto;
+}
+
+.gallery__slide {
+  width: 579px;
+  max-width: 579px;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+}

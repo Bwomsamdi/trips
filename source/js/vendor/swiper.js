@@ -10231,6 +10231,111 @@ const swiper = () => {
     allowTouchMove:false,
   });
 
+  const swiperBlock4 = new Swiper('[data-id="swiper-reviews"]', {
+    breakpoints: {
+      320: {
+          slidesPerView: 1,
+          slidesPerColumn: 1,
+      },
+      768: {
+          slidesPerView: 1.5,
+          slidesPerColumn: 1,
+          spaceBetween: 30
+      },
+      1200: {
+          slidesPerView: 1.5,
+          slidesPerColumn: 1,
+          spaceBetween: 30,
+      }
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    allowTouchMove:false,
+  });
+
+
+  var init = false;
+  var swiperBlock5= Swiper;
+
+  /* Which media query
+  **************************************************************/
+  function swiperMode() {
+    let mobile = window.matchMedia('(min-width: 0px) and (max-width: 767px)');
+    let tablet = window.matchMedia('(min-width: 768px) and (max-width: 1199px)');
+    let desktop = window.matchMedia('(min-width: 1200px)');
+
+    // Enable (for mobile)
+    if(desktop.matches) {
+      if (!init) {
+        init = true;
+        swiperBlock5 = new Swiper('[data-id="swiper-advantages"]', {
+          loop: !0,
+          slidesPerView: 3,
+          slidesPerColumn: 1,
+          initialSlide: 2,
+          spaceBetween: 30,
+          centeredSlides: true,
+          centeredSlidesBounds: true,
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          allowTouchMove:false,
+        });
+      }
+    }
+
+    // Disable (for tablet)
+    else if(tablet.matches) {
+      swiperBlock5.destroy();
+        init = false;
+    }
+
+    // Disable (for desktop)
+    else if(mobile.matches) {
+      swiperBlock5.destroy();
+        init = false;
+    }
+  }
+
+  /* On Load
+  **************************************************************/
+  window.addEventListener('load', function() {
+      swiperMode();
+  });
+
+  /* On Resize
+  **************************************************************/
+  window.addEventListener('resize', function() {
+      swiperMode();
+  });
+
+  const swiperBlock6 = new Swiper('[data-id="swiper-gallery"]', {
+    breakpoints: {
+      320: {
+          slidesPerView: 1,
+          slidesPerColumn: 1,
+      },
+      768: {
+          slidesPerView: 1.5,
+          slidesPerColumn: 1,
+          spaceBetween: 5
+      },
+      1200: {
+          slidesPerView: 2.5,
+          slidesPerColumn: 1,
+          spaceBetween: 5,
+      }
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    allowTouchMove:false,
+  });
+
   swiperBlock.on('transitionEnd', function(e) {
     if (this.realIndex == 0) {
       document.querySelector(".hero").style.backgroundImage = "url('../img/hero1.jpg')";
