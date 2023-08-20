@@ -22,7 +22,8 @@
     content: url("../img/clouds-mobile.webp");
     width: 176px;
     height: 595px;
-    top: 137px;
+    top: auto;
+    bottom: -30px;
   }
 }
 
@@ -146,13 +147,7 @@
 }
 
 .tours__slide img {
-  @media screen and (max-width: 1199px) {
-    width: 100%;
-  }
-
-  @media screen and (max-width: 767px) {
-    width: 100%;
-  }
+  width: 100%;
 }
 
 .tours__description-wrapper ul {
