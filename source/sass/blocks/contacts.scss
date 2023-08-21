@@ -1,5 +1,5 @@
 .contacts {
-  padding: 79px 0 104px 0;
+  padding: 76px 0 101px 0;
 
   @media screen and (max-width: 1199px) {
     padding: 85px 0 70px 0;
@@ -18,7 +18,7 @@
   font-size: 35px;
   font-weight: 800;
   line-height: 1;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 
   @media screen and (max-width: 1199px) {
     font-size: 20px;
@@ -52,7 +52,7 @@
   max-width: 483px;
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 50px;
+  margin-bottom: 49px;
 
   @media screen and (max-width: 1199px) {
     margin-bottom: 40px;
@@ -120,6 +120,10 @@
   }
 }
 
+.contacts__container:last-child {
+  padding-bottom: 0;
+}
+
 .contacts__container svg {
   margin-right: 30px;
 
@@ -132,7 +136,7 @@
   font-size: 18px;
   font-weight: 600;
   line-height: 1;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 
   @media screen and (max-width: 1199px) {
     font-size: 16px;

@@ -1,6 +1,6 @@
 .advantages {
   position: relative;
-  padding: 100px 0;
+  padding: 45px 0 115px 0;
 }
 
 .advantages::before {
@@ -8,8 +8,8 @@
   position: absolute;
   width: 418px;
   height: 279px;
-  right: 0;
-  top: 0;
+  right: 168px;
+  top: -12px;
   z-index: -20;
 
   @media screen and (max-width: 1199px) {
@@ -25,7 +25,7 @@
   font-size: 35px;
   font-weight: 800;
   line-height: 1;
-  margin-bottom: 51px;
+  margin-bottom: 47px;
   text-align: center;
 
   @media screen and (max-width: 1199px) {
@@ -78,7 +78,7 @@
 .advantages .swiper-button-prev {
   top: auto;
   bottom: -85px;
-  right: 50.5%;
+  right: 50.2%;
   left: auto;
 }
 
@@ -86,7 +86,7 @@
   top: auto;
   bottom: -85px;
   right: auto;
-  left: 50.5%;
+  left: 50.2%;
 }
 
 .advantages .swiper-button-prev::after {
@@ -107,7 +107,7 @@
   height: auto;
   border: 1px solid rgba(2, 102, 193, 0.1);
   background-color: $color-default-white;
-  padding: 40px 20px;
+  padding: 39px 20px;
 
   @media screen and (max-width: 1199px) {
     width: 324px;
@@ -120,7 +120,7 @@
 }
 
 .advantages__image-wrapper {
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 
   @media screen and (max-width: 1199px) {
     margin-bottom: 25px;

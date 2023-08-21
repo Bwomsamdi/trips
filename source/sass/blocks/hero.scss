@@ -1,7 +1,7 @@
 .hero {
   background: #547aaa url("../img/hero1.jpg") center no-repeat;
   background-size: cover;
-  padding-bottom: 80px;
+  padding-bottom: 56px;
 
   @media (min-width: $vp-768) and (max-width: 1199px) {
     padding-bottom: 50px;
@@ -27,7 +27,7 @@
   font-weight: 800;
   line-height: 77px;
   color: $color-default-white;
-  padding-bottom: 25px;
+  padding-bottom: 23px;
   position: relative;
   z-index: 10;
 
@@ -46,7 +46,7 @@
   font-size: 17px;
   line-height: 24px;
   color: $color-default-white;
-  padding-bottom: 35px;
+  padding-bottom: 38px;
   max-width: 425px;
 
   @media (max-width: 1199px) {
@@ -60,7 +60,7 @@
 }
 
 .hero__text-wrapper .btn {
-  margin-bottom: 150px;
+  margin-bottom: 151px;
 
   @media (max-width: 1199px) {
     margin-bottom: 50px;
@@ -84,7 +84,7 @@
   font-size: 12px;
   line-height: 1;
   color: $color-default-white;
-  padding: 14px 20px;
+  padding: 15px 19px;
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
@@ -103,7 +103,7 @@
     background-size: contain;
     width: 482px;
     height: 317px;
-    bottom: 100px;
+    bottom: 101px;
     right: 0;
   }
 
@@ -219,14 +219,12 @@
 
 .hero__slider-wrapper .swiper-pagination {
   text-align: right;
-  bottom: 27px;
+  bottom: 35px;
+  left: auto;
+  right: -7px;
 
   @media (max-width: 1199px) {
     text-align: center;
     bottom: 0;
   }
-}
-
-.hero__slider-wrapper .swiper {
-  padding-bottom: 100px;
 }

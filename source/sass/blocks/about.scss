@@ -1,6 +1,6 @@
 .about {
   position: relative;
-  padding: 100px 0;
+  padding: 100px 0 0 0;
 }
 
 .about::after {
@@ -9,7 +9,7 @@
   width: 618px;
   height: 280px;
   right: 0;
-  top: 0;
+  top: -70px;
   z-index: -1;
 
   @media screen and (max-width: 1199px) {
@@ -29,8 +29,8 @@
   font-size: 35px;
   font-weight: 800;
   line-height: 1;
-  margin-bottom: 37px;
-  padding: 0 120px;
+  margin-bottom: 56px;
+  //padding: 0 120px;
 
   @media screen and (max-width: 1199px) {
     font-size: 25px;
@@ -54,7 +54,7 @@
   font-weight: 800;
   line-height: 1;
   opacity: 0.03;
-  padding: 0 120px;
+  //padding: 0 120px;
 
   @media screen and (max-width: 1199px) {
     font-size: 40px;
@@ -77,11 +77,15 @@
 }
 
 .about__image-wrapper {
-  width: 50%;
+  width: 51.6%;
 
   @media screen and (max-width: 767px) {
     @include visually-hidden();
   }
+}
+
+.about__image-wrapper img {
+  object-fit: cover;
 }
 
 .about__image-container {
@@ -94,6 +98,8 @@
 }
 
 .about__text-wrapper {
+  padding-top: 30px;
+
   @media screen and (max-width: 767px) {
     padding: 0 15px;
   }
@@ -102,7 +108,7 @@
 .about__text-wrapper h3 {
   font-size: 21px;
   line-height: 1;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 
   @media screen and (max-width: 1199px) {
     font-size: 18px;
@@ -117,7 +123,7 @@
 
 .about__text-wrapper p {
   max-width: 585px;
-  padding-bottom: 26px;
+  padding-bottom: 30px;
 
   @media screen and (max-width: 1199px) {
     padding-bottom: 25px;

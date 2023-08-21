@@ -3,6 +3,7 @@ footer {
 }
 
 .footer {
+  min-width: 1440px;
   max-width: 1440px;
   margin: 0 auto;
   padding: 31px 120px 30px 120px;
@@ -23,11 +24,13 @@ footer {
 .footer__list {
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
   margin: 0;
   padding: 0;
-  gap: 22px;
+  column-gap: 32px;
+  row-gap: 15px;
   margin-top: 1px;
+  margin-left: 103px;
+  justify-content: center;
 
   @media (min-width: $vp-768) and (max-width: 1199px) {
     gap: 12px;
@@ -114,11 +117,7 @@ footer {
 }
 
 .footer__social {
-  justify-content: start;
   column-span: all;
-  min-width: 121px;
-  max-width: 122px;
-  margin: 0 auto;
   margin-bottom: 20px;
 
   @media (max-width: 767px) {
@@ -128,7 +127,7 @@ footer {
 
 .footer__wrapper {
   display: flex;
-  justify-content: space-between;
+  //justify-content: space-between;
   align-items: center;
   margin-bottom: 16px;
 
@@ -162,6 +161,7 @@ footer {
   justify-content: flex-end;
   gap: 15px;
   min-width: 142px;
+  margin-left: auto;
 
   @media screen and (max-width: 1199px) {
     @include visually-hidden();
