@@ -10184,7 +10184,14 @@ const swiper = () => {
       el: '.swiper-pagination',
       clickable: true
     },
-    allowTouchMove:false,
+    breakpoints: {
+      768: {
+          allowTouchMove: true,
+      },
+      1200: {
+          allowTouchMove:false,
+      }
+    },
   });
 
   const swiperBlock2 = new Swiper('[data-id="swiper-tours"]', {
@@ -10192,22 +10199,24 @@ const swiper = () => {
       320: {
           slidesPerView: 1,
           slidesPerColumn: 1,
-          spaceBetween: 30
+          spaceBetween: 30,
+          allowTouchMove: true,
       },
       768: {
           slidesPerView: 2,
-          spaceBetween: 18
+          spaceBetween: 18,
+          allowTouchMove: true,
       },
       1200: {
           slidesPerView: 3,
-          spaceBetween: 30
+          spaceBetween: 30,
+          allowTouchMove:false,
       }
     },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    allowTouchMove:false,
   });
 
   const swiperBlock3 = new Swiper('[data-id="swiper-training"]', {
@@ -10215,21 +10224,23 @@ const swiper = () => {
       320: {
           slidesPerView: 1,
           slidesPerColumn: 1,
+          allowTouchMove: true,
       },
       768: {
           slidesPerView: 3,
-          spaceBetween: 30
+          spaceBetween: 30,
+          allowTouchMove:true,
       },
       1200: {
           slidesPerView: 4,
-          spaceBetween: 30
+          spaceBetween: 30,
+          allowTouchMove:false,
       }
     },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    allowTouchMove:false,
   });
 
   const swiperBlock4 = new Swiper('[data-id="swiper-reviews"]', {
@@ -10237,24 +10248,26 @@ const swiper = () => {
       320: {
           slidesPerView: 1,
           slidesPerColumn: 1,
-          spaceBetween: 30
+          spaceBetween: 30,
+          allowTouchMove: true,
       },
       768: {
           slidesPerView: 1.2,
           slidesPerColumn: 1,
-          spaceBetween: 30
+          spaceBetween: 30,
+          allowTouchMove:true,
       },
       1200: {
           slidesPerView: 1.5,
           slidesPerColumn: 1,
           spaceBetween: 30,
+          allowTouchMove:false,
       }
     },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    allowTouchMove:false,
   });
 
 
@@ -10284,7 +10297,14 @@ const swiper = () => {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
           },
-          allowTouchMove:false,
+          breakpoints: {
+            768: {
+                allowTouchMove:true,
+            },
+            1200: {
+                allowTouchMove:false,
+            }
+          },
         });
       }
     }
@@ -10319,24 +10339,26 @@ const swiper = () => {
       320: {
           slidesPerView: 1,
           slidesPerColumn: 1,
-          spaceBetween: 5
+          spaceBetween: 5,
+          allowTouchMove: true,
       },
       768: {
           slidesPerView: 1.5,
           slidesPerColumn: 1,
-          spaceBetween: 5
+          spaceBetween: 5,
+          allowTouchMove: true,
       },
       1200: {
           slidesPerView: 2.5,
           slidesPerColumn: 1,
           spaceBetween: 5,
+          allowTouchMove:false,
       }
     },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
-    allowTouchMove:false,
   });
 
   swiperBlock.on('transitionEnd', function(e) {
