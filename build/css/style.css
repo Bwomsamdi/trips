@@ -2372,8 +2372,6 @@ button,
   -webkit-box-pack: right;
       -ms-flex-pack: right;
           justify-content: right;
-  width: auto;
-  height: 100%;
 }
 @media screen and (max-width: 1199px) {
   .about__image-wrapper img {
@@ -2384,7 +2382,6 @@ button,
 
 .about__image-container {
   display: block;
-  width: 100%;
 }
 @media (min-width: 768px) {
   .about__image-container {

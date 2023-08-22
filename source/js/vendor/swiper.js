@@ -10272,7 +10272,7 @@ const swiper = () => {
 
 
   var init = false;
-  var swiperBlock5= Swiper;
+  var swiperBlock5 = null;
 
   /* Which media query
   **************************************************************/
@@ -10308,15 +10308,13 @@ const swiper = () => {
         });
       }
     }
-
     // Disable (for tablet)
-    else if(tablet.matches) {
+    else if(tablet.matches && swiperBlock5) {
       swiperBlock5.destroy();
         init = false;
     }
-
-    // Disable (for desktop)
-    else if(mobile.matches) {
+    // Disable (for mobile)
+    else if(mobile.matches && swiperBlock5) {
       swiperBlock5.destroy();
         init = false;
     }

@@ -101,8 +101,8 @@
 
 .about__image-wrapper img {
   justify-content: right;
-  width: auto;
-  height: 100%;
+  //width: auto;
+  //height: 100%;
 
   @media screen and (max-width: 1199px) {
     height: auto;
@@ -112,7 +112,7 @@
 
 .about__image-container {
   display: block;
-  width: 100%;
+  //width: 100%;
 
   @media (min-width: 768px) {
     @include visually-hidden();
