@@ -17,6 +17,17 @@ const showMenu = () => {
     }
   });
 
+  document.addEventListener('click', (e) => {
+    const withinBoundaries = e.composedPath().includes(navMain);
+    if (!withinBoundaries) {
+      if (navMain.classList.contains('navigation--opened')) {
+        navMain.classList.add('navigation--closed');
+        navMain.classList.remove('navigation--opened');
+        window.scrollLock.enableScrolling();
+      }
+    }
+  });
+
   bodyElements.forEach((bodyElement) => {
     bodyElement.addEventListener('click', function () {
       if (navMain.classList.contains('navigation--opened')) {

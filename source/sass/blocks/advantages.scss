@@ -1,6 +1,10 @@
 .advantages {
   position: relative;
   padding: 45px 0 115px 0;
+
+  @media screen and (max-width: 1199px) {
+    padding: 0;
+  }
 }
 
 .advantages::before {
@@ -30,12 +34,12 @@
 
   @media screen and (max-width: 1199px) {
     font-size: 25px;
-    margin-bottom: 50px;
+    margin-bottom: 47px;
   }
 
   @media screen and (max-width: 767px) {
     font-size: 22px;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
   }
 }
 
@@ -111,11 +115,13 @@
 
   @media screen and (max-width: 1199px) {
     width: 324px;
+    padding: 29px 20px;
   }
 
   @media screen and (max-width: 767px) {
     width: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
+    padding: 19px 10px;
   }
 }
 
@@ -123,7 +129,19 @@
   margin-bottom: 24px;
 
   @media screen and (max-width: 1199px) {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
+  }
+}
+
+.advantages__image-wrapper svg {
+  @media screen and (max-width: 1199px) {
+    width: 48px;
+    height: 48px;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 42px;
+    height: 42px;
   }
 }
 
@@ -153,7 +171,7 @@
   @media screen and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 29px;
     justify-content: center;
   }
 

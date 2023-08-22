@@ -14,14 +14,14 @@
 }
 
 .questions__wrapper {
-  padding: 312px 120px;
+  padding: 312px 103px 312px 88px;
 
   @media screen and (max-width: 1199px) {
-    padding: 192px 45px;
+    padding: 195px 45px;
   }
 
   @media screen and (max-width: 767px) {
-    padding: 181px 15px;
+    padding: 181px 15px 183px 15px;
   }
 }
 
@@ -35,7 +35,7 @@
 
   @media screen and (max-width: 1199px) {
     font-size: 25px;
-    margin-bottom: 15px;
+    margin-bottom: 19px;
   }
 
   @media screen and (max-width: 767px) {
@@ -54,7 +54,7 @@
   @media screen and (max-width: 1199px) {
     max-width: 295px;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
   }
 
   @media screen and (max-width: 767px) {
@@ -71,12 +71,16 @@
 
 .questions__form-wrapper form {
   display: flex;
-  //justify-content: space-between;
   gap: 30px;
-  padding-left: 110px;
+  padding-left: 142px;
+
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    padding-left: 80px;
+  }
 
   @media screen and (max-width: 1199px) {
     display: block;
+    padding-left: 0;
   }
 }
 
@@ -109,7 +113,7 @@
   @media screen and (max-width: 1199px) {
     width: 266px;
     font-size: 14px;
-    padding: 18px 15px;
+    padding: 16px 15px;
   }
 
   @media screen and (max-width: 767px) {
@@ -119,15 +123,19 @@
 
 .questions__form-wrapper .btn {
   display: block;
-  padding-top: 24px;
+  padding-top: 23px;
   min-width: 238px;
 
   @media screen and (max-width: 1199px) {
     margin: 0 auto;
     margin-top: 15px;
+    padding-top: 22px;
+    min-width: 266px;
   }
 
   @media screen and (max-width: 767px) {
-    padding: 21px;
+    margin-top: 8px;
+    padding: 17px 20px 17px 20px;
+    min-width: 100%;
   }
 }

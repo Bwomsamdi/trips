@@ -1,6 +1,14 @@
 .about {
   position: relative;
   padding: 100px 0 0 0;
+
+  @media screen and (max-width: 1199px) {
+    padding: 60px 0 0 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 18px 0 0 0;
+  }
 }
 
 .about::after {
@@ -30,18 +38,16 @@
   font-weight: 800;
   line-height: 1;
   margin-bottom: 56px;
-  //padding: 0 120px;
 
   @media screen and (max-width: 1199px) {
     font-size: 25px;
-    margin-bottom: 26px;
-    padding: 0 45px;
+    margin-bottom: 35px;
+    padding: 0;
   }
 
   @media screen and (max-width: 767px) {
     font-size: 22px;
-    margin-bottom: 18px;
-    padding: 0 15px;
+    margin-bottom: 33px;
   }
 }
 
@@ -54,7 +60,6 @@
   font-weight: 800;
   line-height: 1;
   opacity: 0.03;
-  //padding: 0 120px;
 
   @media screen and (max-width: 1199px) {
     font-size: 40px;
@@ -77,15 +82,32 @@
 }
 
 .about__image-wrapper {
-  width: 51.6%;
+  width: 51.1%;
+
+  @media screen and (max-width: 1199px) {
+    width: 93.5%;
+  }
 
   @media screen and (max-width: 767px) {
     @include visually-hidden();
   }
 }
 
+.about__text-wrapper br {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
 .about__image-wrapper img {
-  object-fit: cover;
+  justify-content: right;
+  width: auto;
+  height: 100%;
+
+  @media screen and (max-width: 1199px) {
+    height: auto;
+    padding-top: 38px;
+  }
 }
 
 .about__image-container {
@@ -99,9 +121,15 @@
 
 .about__text-wrapper {
   padding-top: 30px;
+  padding-bottom: 43px;
+
+  @media screen and (max-width: 1199px) {
+    padding-right: 45px;
+    padding-bottom: 0;
+  }
 
   @media screen and (max-width: 767px) {
-    padding: 0 15px;
+    padding: 46px 15px 28px 15px;
   }
 }
 
@@ -112,12 +140,12 @@
 
   @media screen and (max-width: 1199px) {
     font-size: 18px;
-    margin-bottom: 19px;
+    margin-bottom: 15px;
   }
 
   @media screen and (max-width: 767px) {
     font-size: 16px;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
   }
 }
 
@@ -126,10 +154,11 @@
   padding-bottom: 30px;
 
   @media screen and (max-width: 1199px) {
-    padding-bottom: 25px;
+    padding-bottom: 29px;
   }
 
   @media screen and (max-width: 767px) {
-    padding-bottom: 41px;
+    padding-bottom: 43px;
+    line-height: 20px;
   }
 }

@@ -2,7 +2,7 @@
   display: inline-flex;
   min-width: 220px;
   justify-content: center;
-  padding: 20px;
+  padding: 19px;
 
   font-size: 16px;
   font-weight: 500;
@@ -10,18 +10,42 @@
   color: $color-default-white;
 
   background-color: $color-neon-blue;
-  border: none;
+  border: 1px solid $color-neon-blue;
   cursor: pointer;
 
   transition: opacity $trans-default;
 
   &:disabled {
-    opacity: 0.5;
+    opacity: 0.2;
 
     pointer-events: none;
   }
 
-  @include hover-focus {
-    opacity: 0.8;
+  &:hover {
+    color: #1c3374;
+    background-color: transparent;
+    border: 1px solid #1c3374;
+  }
+
+  &:focus {
+    color: #1c3374;
+    background-color: transparent;
+    border: 1px solid #1c3374;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-default-white;
+    background-color: #1c3374;
+    border: 1px solid #1c3374;
+  }
+
+  @media (max-width: 1199px) {
+    min-width: 206px;
+  }
+
+  @media (max-width: 767px) {
+    min-width: 180px;
+    padding-bottom: 16px;
   }
 }

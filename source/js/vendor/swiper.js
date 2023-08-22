@@ -10192,6 +10192,7 @@ const swiper = () => {
       320: {
           slidesPerView: 1,
           slidesPerColumn: 1,
+          spaceBetween: 30
       },
       768: {
           slidesPerView: 2,
@@ -10217,7 +10218,7 @@ const swiper = () => {
       },
       768: {
           slidesPerView: 3,
-          spaceBetween: 18
+          spaceBetween: 30
       },
       1200: {
           slidesPerView: 4,
@@ -10236,9 +10237,10 @@ const swiper = () => {
       320: {
           slidesPerView: 1,
           slidesPerColumn: 1,
+          spaceBetween: 30
       },
       768: {
-          slidesPerView: 1.5,
+          slidesPerView: 1.2,
           slidesPerColumn: 1,
           spaceBetween: 30
       },
@@ -10317,6 +10319,7 @@ const swiper = () => {
       320: {
           slidesPerView: 1,
           slidesPerColumn: 1,
+          spaceBetween: 5
       },
       768: {
           slidesPerView: 1.5,

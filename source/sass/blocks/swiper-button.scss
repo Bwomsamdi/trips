@@ -1,0 +1,38 @@
+.swiper-button-prev,
+.swiper-button-next {
+  width: 37px;
+  height: 35px;
+  background-color: $color-neon-blue;
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    border: 1px solid #1c3374;
+  }
+
+  &:hover::after {
+    background-image: url("../img/sprite.svg#left2");
+  }
+
+  &:active {
+    background-color: #1c3374;
+    border: 1px solid #1c3374;
+  }
+
+  &:active::after {
+    background-image: url("../img/sprite.svg#left");
+  }
+}
+
+.swiper-button-prev::after {
+  color: transparent;
+  background-image: url("../img/sprite.svg#left");
+  width: 14px;
+}
+
+.swiper-button-next::after {
+  color: transparent;
+  background-image: url("../img/sprite.svg#left");
+  transform: rotate(180deg);
+  width: 14px;
+}

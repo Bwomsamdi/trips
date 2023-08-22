@@ -1,6 +1,13 @@
 .gallery {
-  //position: relative;
   padding: 100px 0 0 0;
+
+  @media screen and (max-width: 1199px) {
+    padding: 87px 0 0 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 52px 0 0 0;
+  }
 }
 
 .gallery h2 {
@@ -15,12 +22,12 @@
 
   @media screen and (max-width: 1199px) {
     font-size: 25px;
-    margin-bottom: 26px;
+    margin-bottom: 24px;
   }
 
   @media screen and (max-width: 767px) {
     font-size: 22px;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
   }
 }
 
@@ -47,11 +54,13 @@
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 45px;
+  max-width: 693px;
 
   @media screen and (max-width: 1199px) {
     font-size: 14px;
     line-height: 22px;
     margin-bottom: 36px;
+    max-width: 395px;
   }
 
   @media screen and (max-width: 767px) {
@@ -77,13 +86,37 @@
 .gallery .swiper-button-prev {
   top: -65px;
   left: auto;
-  right: 143px;
+  right: 161px;
+
+  @media screen and (max-width: 1199px) {
+    top: -67px;
+    left: auto;
+    right: 86px;
+  }
+
+  @media screen and (max-width: 767px) {
+    top: -27px;
+    left: auto;
+    right: 56px;
+  }
 }
 
 .gallery .swiper-button-next {
   top: -65px;
   left: auto;
-  right: 102px;
+  right: 120px;
+
+  @media screen and (max-width: 1199px) {
+    top: -67px;
+    left: auto;
+    right: 45px;
+  }
+
+  @media screen and (max-width: 767px) {
+    top: -27px;
+    left: auto;
+    right: 15px;
+  }
 }
 
 .gallery .swiper-button-prev::after {
@@ -113,6 +146,9 @@
 
   @media screen and (max-width: 767px) {
     width: 100%;
+    min-width: 334px;
+    max-width: auto;
+    height: auto;
   }
 }
 
@@ -120,9 +156,18 @@
   display: block;
   width: 100%;
   height: 449px;
+
+  @media screen and (max-width: 767px) {
+    height: auto;
+  }
 }
 
 .gallery__slide img {
   width: 579px;
   height: 449px;
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    height: auto;
+  }
 }

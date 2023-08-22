@@ -1,6 +1,14 @@
 .reviews {
   position: relative;
-  padding: 91px 0;
+  padding: 48px 0 91px 0;
+
+  @media screen and (max-width: 1199px) {
+    padding: 61px 0 88px 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 0 0 31px 0;
+  }
 }
 
 .reviews::before {
@@ -33,6 +41,7 @@
 
   @media screen and (max-width: 767px) {
     font-size: 22px;
+    margin-bottom: 33px;
   }
 }
 
@@ -70,8 +79,15 @@
   box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
   background-color: $color-default-white;
 
+  @media screen and (max-width: 1199px) {
+    width: 560px;
+  }
+
   @media screen and (max-width: 767px) {
     display: block;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 17px;
   }
 }
 
@@ -80,6 +96,7 @@
 
   @media screen and (max-width: 767px) {
     width: 100%;
+    margin-bottom: 17px;
   }
 }
 
@@ -105,6 +122,10 @@
   justify-content: space-between;
   max-width: 442px;
   padding: 14px 0 12px 0;
+
+  @media screen and (max-width: 1199px) {
+    padding: 2px 0 0 0;
+  }
 }
 
 .reviews .swiper-button-prev,
@@ -115,15 +136,39 @@
 }
 
 .reviews .swiper-button-prev {
-  top: -54px;
+  top: -52px;
   left: auto;
   right: 42px;
+
+  @media screen and (max-width: 1199px) {
+    top: -45px;
+    left: auto;
+    right: 42px;
+  }
+
+  @media screen and (max-width: 767px) {
+    top: -43px;
+    left: auto;
+    right: 42px;
+  }
 }
 
 .reviews .swiper-button-next {
-  top: -54px;
+  top: -52px;
   left: auto;
   right: 0;
+
+  @media screen and (max-width: 1199px) {
+    top: -45px;
+    left: auto;
+    right: 0;
+  }
+
+  @media screen and (max-width: 767px) {
+    top: -43px;
+    left: auto;
+    right: 0;
+  }
 }
 
 .reviews .swiper-button-prev::after {
@@ -148,7 +193,7 @@
   }
 
   @media screen and (max-width: 767px) {
-    padding-bottom: 15px;
+    padding-bottom: 10px;
   }
 }
 
@@ -159,11 +204,12 @@
 
   @media screen and (max-width: 1199px) {
     font-size: 12px;
-    padding-bottom: 6px;
+    padding-bottom: 1px;
   }
 
   @media screen and (max-width: 767px) {
-    padding-bottom: 8px;
+    padding-top: 6px;
+    padding-bottom: 2px;
   }
 }
 

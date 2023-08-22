@@ -8,6 +8,10 @@
   @media screen and (max-width: 1199px) {
     padding-right: 0;
   }
+
+  @media screen and (max-width: 767px) {
+    justify-content: left;
+  }
 }
 
 .social__link {
@@ -24,14 +28,16 @@
     pointer-events: none;
   }
 
-  &:hover {
-    background-color: #103aae;
-    fill: $color-default-white;
+  &:hover,
+  &:focus {
+    border-color: $color-default-black;
+    outline: none;
   }
 
   &:active {
     fill: $color-default-white;
-    background-color: #102654;
+    background-color: $color-neon-blue;
+    border-color: transparent;
   }
 }
 

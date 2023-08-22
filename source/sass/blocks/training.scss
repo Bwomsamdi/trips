@@ -1,6 +1,5 @@
 .training {
   position: relative;
-  //padding: 100px 0;
 }
 
 .training .container {
@@ -17,13 +16,13 @@
 
   @media screen and (max-width: 1199px) {
     font-size: 25px;
-    margin-bottom: 26px;
+    margin-bottom: 21px;
     padding: 0 45px;
   }
 
   @media screen and (max-width: 767px) {
     font-size: 22px;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
     padding: 0 15px;
   }
 }
@@ -59,7 +58,7 @@
 
   @media screen and (max-width: 1199px) {
     max-width: 630px;
-    margin-bottom: 55px;
+    margin-bottom: 66px;
     padding-left: 45px;
   }
 
@@ -67,7 +66,7 @@
     font-size: 14px;
     line-height: 20px;
     max-width: 100%;
-    margin-bottom: 37px;
+    margin-bottom: 49px;
     padding-right: 15px;
     padding-left: 15px;
   }
@@ -81,13 +80,20 @@
 
   @media screen and (max-width: 1199px) {
     font-size: 18px;
-    margin-bottom: 34px;
+    margin-bottom: 32px;
     padding: 0 45px;
   }
 
   @media screen and (max-width: 767px) {
     font-size: 16px;
     padding: 0 15px;
+  }
+}
+
+.training h3:last-of-type {
+  @media screen and (max-width: 767px) {
+    padding-left: 19px;
+    margin-bottom: 20px;
   }
 }
 
@@ -102,12 +108,36 @@
   top: -48px;
   left: auto;
   right: 162px;
+
+  @media screen and (max-width: 1199px) {
+    top: -37px;
+    left: auto;
+    right: 86px;
+  }
+
+  @media screen and (max-width: 767px) {
+    top: -37px;
+    left: auto;
+    right: 56px;
+  }
 }
 
 .training .swiper-button-next {
   top: -48px;
   left: auto;
   right: 122px;
+
+  @media screen and (max-width: 1199px) {
+    top: -37px;
+    left: auto;
+    right: 44px;
+  }
+
+  @media screen and (max-width: 767px) {
+    top: -37px;
+    left: auto;
+    right: 15px;
+  }
 }
 
 .training .swiper-button-prev::after {
@@ -127,45 +157,42 @@
   position: relative;
   margin-bottom: 50px;
   padding: 0 120px;
-  //height: 100%;
 
   @media screen and (max-width: 1199px) {
+    margin-bottom: 43px;
     padding: 0 45px;
   }
 
   @media screen and (max-width: 767px) {
+    margin-bottom: 38px;
     padding: 0 15px;
   }
 }
 
-.training__wrapper .swiper-wrapper {
-  //height: max-content;
-}
-
 .training .swiper {
   position: static;
-  //padding: 28px;
   box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
   height: 100%;
 }
 
 .training__slide {
-  //position: relative;
   padding: 20px;
   border: 1px solid $color-default-white;
   box-shadow: 5px 0 40px 5px rgba(28, 51, 116, 0.1);
   height: auto;
   display: flex;
   flex-direction: column;
+
+  @media screen and (max-width: 1199px) {
+    padding: 15px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 20px;
+  }
 }
 
 .training__description-wrapper {
-  //display: block;
-  //position: absolute;
-  //bottom: 0;
-  //width: 380px;
-  //padding: 28px 20px;
-  //color: $color-default-white;
   overflow-y: auto;
 
   @media (min-width: 1200px) and (max-width: 1439px) {
@@ -186,6 +213,7 @@
 
   @media screen and (max-width: 1199px) {
     width: 100%;
+    margin-bottom: 18px;
   }
 
   @media screen and (max-width: 767px) {
@@ -198,6 +226,14 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 13px;
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 12px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding-right: 10px;
+  }
 }
 
 .training__title a {
@@ -206,6 +242,23 @@
   border: 1px solid rgba(2, 102, 193, 0.1);
   text-align: center;
   padding-top: 2px;
+
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $color-default-black;
+    outline: none;
+  }
+
+  &:active {
+    fill: $color-default-white;
+    background-color: $color-neon-blue;
+    border-color: transparent;
+  }
 }
 
 .training__description-wrapper h4 {
@@ -217,12 +270,20 @@
   line-height: 16px;
   margin-bottom: 0;
   padding: 0;
+
+  @media screen and (max-width: 1199px) {
+    line-height: 18px;
+  }
+}
+
+.training__roadmap {
+  @media screen and (max-width: 1199px) {
+    padding-top: 8px;
+  }
 }
 
 .training__roadmap ul {
   display: flex;
-  //flex-wrap: wrap;
-  gap: 10px;
   justify-content: space-between;
   align-items: center;
   padding: 0 120px;
@@ -233,7 +294,7 @@
     width: 100%;
     padding: 0 45px;
     display: grid;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: 52% 48%;
     grid-template-rows: repeat(2, auto);
     row-gap: 91px;
     column-gap: 0;
@@ -262,7 +323,7 @@
 .training__roadmap li {
   position: relative;
   display: flex;
-  max-width: 261px;
+  max-width: 277px;
   font-size: 16px;
   line-height: 24px;
   align-items: center;
@@ -270,6 +331,7 @@
   @media screen and (max-width: 1199px) {
     font-size: 14px;
     line-height: 22px;
+    max-width: 100%;
   }
 
   @media screen and (max-width: 767px) {
@@ -279,13 +341,25 @@
   }
 }
 
-.training__roadmap span {
-  max-width: 277px;
-}
-
 .training__roadmap li:last-of-type {
   @media (min-width: 768px) and (max-width: 1199px) {
     grid-area: 2 / 1 / 3 / 2;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 0;
+  }
+}
+
+.training__roadmap span {
+  max-width: 277px;
+
+  @media screen and (max-width: 1199px) {
+    max-width: 220px;
+  }
+
+  @media screen and (max-width: 767px) {
+    max-width: 190px;
   }
 }
 
@@ -295,7 +369,7 @@
     position: absolute;
     width: 100%;
     height: 1px;
-    bottom: -13px;
+    bottom: -17px;
     background-color: rgba(2, 102, 193, 0.2);
   }
 }
@@ -306,7 +380,7 @@
     position: absolute;
     width: 100%;
     height: 1px;
-    top: -13px;
+    top: -20px;
     background-color: rgba(2, 102, 193, 0.2);
   }
 }
@@ -328,12 +402,12 @@
   position: absolute;
   width: 14px;
   height: 14px;
-  bottom: -39px;
+  bottom: -40px;
   background-color: $color-neon-blue;
   border-radius: 50%;
 
   @media screen and (max-width: 1199px) {
-    bottom: -20px;
+    bottom: -24px;
   }
 
   @media screen and (max-width: 767px) {
@@ -345,7 +419,7 @@
 .training__roadmap div.training__pine-tree::before,
 .training__roadmap div.training__mountain::before {
   @media (min-width: 768px) and (max-width: 1199px) {
-    top: -20px;
+    top: -27px;
   }
 }
 
@@ -354,10 +428,17 @@
   margin-right: 15px;
 
   @media screen and (max-width: 767px) {
-    margin-right: 12px;
+    margin-right: 6px;
   }
 }
 
 .training__boots {
   padding-top: 3px;
+}
+
+.training__roadmap svg {
+  @media screen and (max-width: 767px) {
+    width: 19px;
+    height: 19px;
+  }
 }

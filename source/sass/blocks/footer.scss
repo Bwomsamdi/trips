@@ -3,7 +3,6 @@ footer {
 }
 
 .footer {
-  min-width: 1440px;
   max-width: 1440px;
   margin: 0 auto;
   padding: 31px 120px 30px 120px;
@@ -15,8 +14,6 @@ footer {
 
   @media (max-width: 767px) {
     display: block;
-    //gap: 25px;
-    //column-count: 2;
     padding: 30px 15px 30px 15px;
   }
 }
@@ -26,20 +23,24 @@ footer {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  column-gap: 32px;
+  column-gap: 23px;
   row-gap: 15px;
   margin-top: 1px;
-  margin-left: 103px;
+  margin-left: 99px;
   justify-content: center;
 
   @media (min-width: $vp-768) and (max-width: 1199px) {
-    gap: 12px;
+    column-gap: 16px;
+    margin-left: 0;
+    padding-right: 6px;
+    padding-bottom: 6px;
   }
 
   @media (max-width: 767px) {
     display: block;
     row-gap: 30px;
     column-gap: 71px;
+    margin-left: 0;
   }
 }
 
@@ -47,7 +48,7 @@ footer {
   @media (max-width: 767px) {
     min-width: 90px;
     width: 100%;
-    margin-bottom: 16px;
+    margin-bottom: 7px;
   }
 }
 
@@ -55,19 +56,23 @@ footer {
   font-size: 16px;
   font-weight: 400;
   line-height: 1;
-  //padding: 5px 10px;
+  padding: 3px 5px;
+
+  &:last-of-type {
+    padding-right: 0;
+  }
 
   &:disabled {
-    opacity: 0.4;
+    opacity: 0.5;
     pointer-events: none;
   }
 
   &:hover {
-    border-bottom: 1px solid $color-default-white;
+    border-bottom: 1px solid $color-default-black;
   }
 
   &:focus {
-    outline: 1px solid $color-default-white;
+    outline: 1px solid $color-default-black;
   }
 
   &:active {
@@ -80,24 +85,25 @@ footer {
 
   @media screen and (max-width: 767px) {
     padding: 0;
+    font-size: 14px;
   }
 }
 
 .footer__logo {
-  //margin-right: 8px;
-  //padding-top: 10px;
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
 
   @media (min-width: $vp-768) and (max-width: 1199px) {
     width: 118px;
-    //margin-right: 13px;
-    //padding-top: 4px;
   }
 
   @media (max-width: 767px) {
     display: block;
     width: 100%;
-    margin-bottom: 20px;
-    //padding-top: 6px;
+    margin-bottom: 16px;
+    padding-left: 4px;
   }
 }
 
@@ -112,7 +118,8 @@ footer {
   @media (max-width: 767px) {
     gap: 25px;
     column-count: 2;
-    padding-bottom: 34px;
+    padding-bottom: 19px;
+    padding-left: 4px;
   }
 }
 
@@ -122,16 +129,18 @@ footer {
 
   @media (max-width: 767px) {
     max-width: 100%;
+    margin-left: 5px;
   }
 }
 
 .footer__wrapper {
   display: flex;
-  //justify-content: space-between;
   align-items: center;
   margin-bottom: 16px;
 
   @media (max-width: 1199px) {
+    justify-content: space-between;
+    gap: 10px;
     margin-bottom: 37px;
   }
 
@@ -149,9 +158,24 @@ footer {
   font-weight: 300;
   line-height: 100%;
 
+  &:disabled {
+    opacity: 0.2;
+  }
+
+  &:hover,
+  &:focus {
+    color: #1c3374;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-neon-blue;
+  }
+
   @media (max-width: 767px) {
     text-align: left;
     margin: 0;
+    margin-left: 5px;
   }
 }
 
@@ -172,4 +196,19 @@ footer {
   font-size: 18px;
   font-weight: 600;
   line-height: 1;
+
+  &:hover {
+    color: #1c3374;
+  }
+
+  &:focus {
+    color: #1c3374;
+    outline: 1px solid $color-default-black;
+  }
+
+  &:active {
+    color: $color-neon-blue;
+    outline: none;
+    border: none;
+  }
 }
