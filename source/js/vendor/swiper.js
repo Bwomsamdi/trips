@@ -7991,7 +7991,7 @@ const swiper = () => {
           const $bulletEl = $(bulletEl);
 
           if (swiper.params.pagination.clickable) {
-            makeElFocusable($bulletEl);
+            //makeElFocusable($bulletEl);
 
             if (!swiper.params.pagination.renderBullet) {
               addElRole($bulletEl, 'button');
@@ -10197,6 +10197,27 @@ const swiper = () => {
     },
   });
 
+  const swiper1 = document.querySelector('[data-id="swiper-hero"]');
+  console.log(swiper1);
+  const slideEls = swiper1.querySelectorAll('.swiper-slide');
+  console.log(slideEls);
+
+  function swiperFocus() {
+    slideEls.forEach((slideEl) => {
+      let btn = slideEl.querySelector('.btn');
+      console.log(btn);
+      if (slideEl.classList.contains('swiper-slide-active')) {
+        btn.setAttribute('tabindex', '0');
+      } else if (slideEl.classList.contains('swiper-slide-duplicate-active')) {
+        btn.setAttribute('tabindex', '-1');
+      }
+    });
+  }
+
+  window.addEventListener('load', function() {
+    swiperFocus();
+  });
+
   const swiperBlock2 = new Swiper('[data-id="swiper-tours"]', {
     breakpoints: {
       320: {
@@ -10350,8 +10371,8 @@ const swiper = () => {
           allowTouchMove: true,
       },
       1200: {
-          slidesPerView: 2.5,
-          slidesPerColumn: 1,
+          slidesPerView: 'auto',
+          //slidesPerColumn: 1,
           spaceBetween: 5,
           allowTouchMove:false,
       }
