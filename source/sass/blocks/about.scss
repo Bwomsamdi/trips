@@ -101,6 +101,7 @@
 
 .about__image-wrapper img {
   justify-content: right;
+  width: 98%;
   //width: auto;
   //height: 100%;
 
@@ -150,10 +151,11 @@
 }
 
 .about__text-wrapper p {
-  max-width: 585px;
+  max-width: 570px;
   padding-bottom: 30px;
 
   @media screen and (max-width: 1199px) {
+    max-width: 585px;
     padding-bottom: 29px;
   }
 

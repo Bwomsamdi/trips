@@ -107,7 +107,7 @@
 
   @media screen and (max-width: 1199px) {
     min-width: 186px;
-    height: 237px;
+    height: auto;
   }
 
   @media screen and (max-width: 767px) {
@@ -119,12 +119,24 @@
 .reviews__description-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  //justify-content: space-between;
   max-width: 442px;
   padding: 14px 0 12px 0;
 
   @media screen and (max-width: 1199px) {
     padding: 2px 0 0 0;
+  }
+}
+
+.reviews__description-wrapper div:first-of-type {
+  margin-bottom: 16px;
+
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 18px;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 0;
   }
 }
 

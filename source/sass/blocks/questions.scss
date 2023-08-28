@@ -72,7 +72,9 @@
 .questions__form-wrapper form {
   display: flex;
   gap: 30px;
-  padding-left: 142px;
+  justify-content: center;
+  padding-left: 13px;
+  //padding-left: 142px;
 
   @media (min-width: 1200px) and (max-width: 1439px) {
     padding-left: 80px;

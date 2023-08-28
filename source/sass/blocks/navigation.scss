@@ -1,7 +1,7 @@
 .navigation {
   order: 5;
   display: flex;
-  flex-wrap: wrap;
+  //flex-wrap: wrap;
   align-items: center;
   width: 100%;
   column-gap: 10px;
@@ -17,7 +17,7 @@
 
   &--opened {
     @media (max-width: 1199px) {
-      position: absolute;
+      position: fixed;
       align-items: center;
       width: 100%;
       top: 0;
@@ -90,13 +90,23 @@
       right: 0;
       background-color: $color-default-white;
       width: 100%;
+      //height: 100vh;
       z-index: 10;
       padding: 48px 45px 66px 45px;
+      overflow-y: auto;
     }
 
     @media screen and (max-width: 767px) {
       top: 72px;
       padding: 23px 15px 46px 15px;
+    }
+  }
+
+  &--opened li {
+    @media (max-width: 1199px) {
+      //display: block;
+      //width: 100%;
+      //height: max-content;
     }
   }
 
@@ -279,5 +289,6 @@
   @media screen and (max-width: 767px) {
     min-width: 112px;
     height: 34px;
+    margin-left: auto;
   }
 }

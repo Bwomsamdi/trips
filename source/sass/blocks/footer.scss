@@ -7,6 +7,10 @@ footer {
   margin: 0 auto;
   padding: 31px 120px 30px 120px;
 
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    padding: 31px 100px 30px 100px;
+  }
+
   @media (min-width: $vp-768) and (max-width: 1199px) {
     width: 100%;
     padding: 44px 45px 40px 45px;
@@ -23,14 +27,18 @@ footer {
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  column-gap: 23px;
+  column-gap: 21px;
   row-gap: 15px;
   margin-top: 1px;
   margin-left: 99px;
   justify-content: center;
 
+  @media (min-width: 1200px) and (max-width: 1439px) {
+    margin-left: 45px;
+  }
+
   @media (min-width: $vp-768) and (max-width: 1199px) {
-    column-gap: 16px;
+    column-gap: 9.5px;
     margin-left: 0;
     padding-right: 6px;
     padding-bottom: 6px;
@@ -45,6 +53,10 @@ footer {
 }
 
 .footer__list li {
+  &:last-of-type a {
+    padding-right: 0;
+  }
+
   @media (max-width: 767px) {
     min-width: 90px;
     width: 100%;
@@ -57,10 +69,7 @@ footer {
   font-weight: 400;
   line-height: 1;
   padding: 3px 5px;
-
-  &:last-of-type {
-    padding-right: 0;
-  }
+  padding-right: 6.5px;
 
   &:disabled {
     opacity: 0.5;
@@ -90,6 +99,8 @@ footer {
 }
 
 .footer__logo {
+  width: 205px;
+
   &:hover,
   &:focus {
     opacity: 0.5;
@@ -108,8 +119,14 @@ footer {
 }
 
 .footer__logo a {
+  display: block;
+  width: 205px;
+
+  @media (min-width: $vp-768) and (max-width: 1199px) {
+    width: 118px;
+  }
+
   @media (max-width: 767px) {
-    display: block;
     width: 112px;
   }
 }
@@ -185,6 +202,7 @@ footer {
   justify-content: flex-end;
   gap: 15px;
   min-width: 142px;
+  max-width: 142px;
   margin-left: auto;
 
   @media screen and (max-width: 1199px) {

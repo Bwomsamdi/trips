@@ -10180,6 +10180,9 @@ const swiper = () => {
     loop: !0,
     slidesPerView: 1,
     slidesPerColumn: 1,
+    noSwiping: true,
+    noSwipingClass: 'swiper-no-swiping',
+    noSwipingSelector: 'button',
     pagination: {
       el: '.swiper-pagination',
       clickable: true
@@ -10360,14 +10363,26 @@ const swiper = () => {
   });
 
   swiperBlock.on('transitionEnd', function(e) {
-    if (this.realIndex == 0) {
-      document.querySelector(".hero").style.backgroundImage = "url('../img/hero1.jpg')";
-    }
-    if (this.realIndex == 1) {
-      document.querySelector(".hero").style.backgroundImage = "url('../img/hero2.jpg')";
-    }
-    if (this.realIndex == 2) {
-      document.querySelector(".hero").style.backgroundImage = "url('../img/hero3.jpg')";
+    if (document.documentElement.clientWidth > 1200) {
+      if (this.realIndex == 0) {
+        document.querySelector(".hero").style.backgroundImage = "url('../img/hero1.jpg')";
+      }
+      if (this.realIndex == 1) {
+        document.querySelector(".hero").style.backgroundImage = "url('../img/hero2.jpg')";
+      }
+      if (this.realIndex == 2) {
+        document.querySelector(".hero").style.backgroundImage = "url('../img/hero3.jpg')";
+      }
+    } else {
+      if (this.realIndex == 0) {
+        document.querySelector(".hero").style.backgroundImage = "url('../img/hero1-tablet.jpg')";
+      }
+      if (this.realIndex == 1) {
+        document.querySelector(".hero").style.backgroundImage = "url('../img/hero2-tablet.jpg')";
+      }
+      if (this.realIndex == 2) {
+        document.querySelector(".hero").style.backgroundImage = "url('../img/hero3-tablet.jpg')";
+      }
     }
   });
 

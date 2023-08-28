@@ -285,7 +285,7 @@
 .training__roadmap ul {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: end;
   padding: 0 120px;
   padding-bottom: 32px;
   border-bottom: 1px solid rgba(2, 102, 193, 0.2);
@@ -327,6 +327,7 @@
   font-size: 16px;
   line-height: 24px;
   align-items: center;
+  margin-right: 10px;
 
   @media screen and (max-width: 1199px) {
     font-size: 14px;
@@ -342,6 +343,8 @@
 }
 
 .training__roadmap li:last-of-type {
+  margin-right: 0;
+
   @media (min-width: 768px) and (max-width: 1199px) {
     grid-area: 2 / 1 / 3 / 2;
   }

@@ -57,7 +57,7 @@
               </nav>
             </div>
             <div class="hero__slider-wrapper">
-              <div class="swiper" data-id="swiper-hero">
+              <div class="swiper swiper-no-swiping" data-id="swiper-hero">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide" data-id="slider1">
                     <div class="hero__wrapper">
@@ -92,7 +92,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-slide" data-id="slider2">
+                  <div class="swiper-slide swiper-no-swiping" data-id="slider2">
                     <div class="hero__wrapper">
                       <div class="hero__text-wrapper">
                         <div class="hero__text-conteiner">
@@ -132,7 +132,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="swiper-slide" data-id="slider3">
+                  <div class="swiper-slide swiper-no-swiping" data-id="slider3">
                     <div class="hero__wrapper">
                       <div class="hero__text-wrapper">
                         <div class="hero__text-conteiner">
@@ -157,8 +157,8 @@
                           </li>
                         </ul>
                       </div>
-                      <div class="hero__audio-wrapper">
-                        <iframe style="border:none;width:340px;height:220px;" src="https://music.yandex.ru/iframe/#album/25474374"></iframe>
+                      <div class="hero__audio-wrapper" inert>
+                        <iframe style="border:none;width:340px;height:220px;" src="https://music.yandex.ru/iframe/#album/25474374" inert></iframe>
                       </div>
                     </div>
                   </div>
@@ -439,8 +439,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
               </div>
             </div>
             <a class="tours__link" href="#">Показать все туры</a>
@@ -585,8 +585,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
               </div>
             </div>
             <h3>Процесс обучения</h3>
@@ -659,7 +659,7 @@
             <div class="about__text-wrapper">
               <h2>О нас</h2>
               <h3>История компании</h3>
-              <p>В далеком 2000 году мы начали заниматься туризмом – походы, поездки, восхождения, нам это настолько понравилось, что мы этим стали жить. <br>Спустя 5 лет, в&nbsp;2005 году мы основали компанию, чтобы показывать людям удивительные места нашей страны.</p>
+              <p>В далеком 2000 году мы начали заниматься туризмом – походы, поездки, восхождения, нам это настолько понравилось, что мы этим стали жить. Спустя 5 лет, в&nbsp;2005 году мы основали компанию, чтобы показывать людям удивительные места нашей страны.</p>
               <h3>Наша цель</h3>
               <p>Подарить вам незабываемые впечатления от&nbsp;похода в&nbsp;горы. Мы берем на&nbsp;себя все организационные вопросы. При организации мы обязательно учтем все ваши пожелания. Вам останется только наслаждаться незабываемым приключением в&nbsp;приятной компании.</p>
             </div>
@@ -782,8 +782,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
               </div>
             </div>
           </div>
@@ -850,8 +850,8 @@
                     </div>
                   </div>
                 </div>
-                <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
               </div>
             </div>
           </div>
@@ -903,9 +903,87 @@
                       </picture>
                     </div>
                   </div>
+                  <div class="gallery__slide swiper-slide">
+                    <div class="gallery__image-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="img/group1.webp 1x, img/group1@2x.webp 2x">
+                        <img
+                          src="img/group1.jpg"
+                          srcset="img/group1@2x.jpg 2x"
+                          width="579"
+                          height="449"
+                          alt="Группа рандомных фото.">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="gallery__slide swiper-slide">
+                    <div class="gallery__image-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="img/group2.webp 1x, img/group2@2x.webp 2x">
+                        <img
+                          src="img/group2.jpg"
+                          srcset="img/group2@2x.jpg 2x"
+                          width="579"
+                          height="449"
+                          alt="Группа рандомных фото.">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="gallery__slide swiper-slide">
+                    <div class="gallery__image-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="img/group3.webp 1x, img/group3@2x.webp 2x">
+                        <img
+                          src="img/group3.jpg"
+                          srcset="img/group3@2x.jpg 2x"
+                          width="579"
+                          height="449"
+                          alt="Группа рандомных фото.">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="gallery__slide swiper-slide">
+                    <div class="gallery__image-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="img/group1.webp 1x, img/group1@2x.webp 2x">
+                        <img
+                          src="img/group1.jpg"
+                          srcset="img/group1@2x.jpg 2x"
+                          width="579"
+                          height="449"
+                          alt="Группа рандомных фото.">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="gallery__slide swiper-slide">
+                    <div class="gallery__image-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="img/group2.webp 1x, img/group2@2x.webp 2x">
+                        <img
+                          src="img/group2.jpg"
+                          srcset="img/group2@2x.jpg 2x"
+                          width="579"
+                          height="449"
+                          alt="Группа рандомных фото.">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="gallery__slide swiper-slide">
+                    <div class="gallery__image-wrapper">
+                      <picture>
+                        <source type="image/webp" srcset="img/group3.webp 1x, img/group3@2x.webp 2x">
+                        <img
+                          src="img/group3.jpg"
+                          srcset="img/group3@2x.jpg 2x"
+                          width="579"
+                          height="449"
+                          alt="Группа рандомных фото.">
+                      </picture>
+                    </div>
+                  </div>
                 </div>
-                <div class="swiper-button-next"></div>
                 <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
               </div>
             </div>
         </section>

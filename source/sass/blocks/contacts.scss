@@ -1,8 +1,8 @@
 .contacts {
-  padding: 76px 0 101px 0;
+  padding: 76px 0 102px 0;
 
   @media screen and (max-width: 1199px) {
-    padding: 75px 0 70px 0;
+    padding: 75px 0 68px 0;
   }
 
   @media screen and (max-width: 767px) {
@@ -54,7 +54,7 @@
   max-width: 483px;
   font-size: 16px;
   line-height: 24px;
-  margin-bottom: 49px;
+  margin-bottom: 33px;
 
   @media screen and (max-width: 1199px) {
     margin-bottom: 40px;
@@ -69,8 +69,12 @@
 }
 
 .contacts__text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
   @media screen and (max-width: 1199px) {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 44px;
   }
@@ -92,7 +96,9 @@
 
 .contacts__map-container {
   grid-area: 1 / 2 / 3 / 3;
-  margin: auto 0 0 auto;
+  //margin: auto 0 0 auto;
+  margin-top: 18px;
+  margin-left: auto;
   width: 585px;
   height: 324px;
   background-image: url("../img/map.webp");
@@ -108,6 +114,7 @@
 
   @media screen and (max-width: 767px) {
     height: 320px;
+    margin-top: 0;
     background-image: url("../img/map-mobile.webp");
   }
 }
@@ -115,11 +122,11 @@
 .contacts__container {
   display: flex;
   align-items: center;
-  padding-bottom: 35px;
+  padding-bottom: 34px;
 
   @media screen and (max-width: 1199px) {
     align-items: flex-start;
-    padding-bottom: 38px;
+    padding-bottom: 20px;
   }
 
   @media screen and (max-width: 767px) {
@@ -154,7 +161,7 @@
   font-size: 18px;
   font-weight: 600;
   line-height: 1;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
 
   @media screen and (max-width: 1199px) {
     font-size: 16px;
@@ -163,13 +170,14 @@
 
   @media screen and (max-width: 767px) {
     font-size: 14px;
-    margin-bottom: 8px;
+    margin-bottom: 7px;
   }
 }
 
 .contacts__container a {
   font-size: 16px;
-  line-height: 1;
+  line-height: 24px;
+  display: block;
 
   @media screen and (max-width: 1199px) {
     font-size: 14px;
@@ -177,6 +185,7 @@
 }
 
 .contacts__container p {
+  display: block;
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 0;

@@ -12,6 +12,7 @@
   background-color: $color-neon-blue;
   border: 1px solid $color-neon-blue;
   cursor: pointer;
+  user-select: none;
 
   transition: opacity $trans-default;
 
