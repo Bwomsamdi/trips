@@ -363,6 +363,11 @@ template {
   /* Fix of Webkit flickering */
   z-index: 1;
 }
+@media (max-width: 1199px) {
+  .swiper {
+    z-index: 0;
+  }
+}
 
 .swiper-vertical > .swiper-wrapper {
   -webkit-box-orient: vertical;
@@ -3552,7 +3557,7 @@ footer {
   color: #ffffff;
   padding-bottom: 23px;
   position: relative;
-  z-index: 10;
+  z-index: 1;
 }
 @media (max-width: 1199px) {
   .hero__text-conteiner h1 {
