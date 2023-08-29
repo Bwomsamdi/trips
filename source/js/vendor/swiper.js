@@ -10180,13 +10180,12 @@ const swiper = () => {
     loop: !0,
     slidesPerView: 1,
     slidesPerColumn: 1,
-    noSwiping: true,
-    noSwipingClass: 'swiper-no-swiping',
-    noSwipingSelector: 'button',
     pagination: {
       el: '.swiper-pagination',
+      bulletElement: 'button',
       clickable: true
     },
+    bulletElement: 'button',
     breakpoints: {
       768: {
           allowTouchMove: true,
@@ -10198,24 +10197,30 @@ const swiper = () => {
   });
 
   const swiper1 = document.querySelector('[data-id="swiper-hero"]');
-  console.log(swiper1);
   const slideEls = swiper1.querySelectorAll('.swiper-slide');
-  console.log(slideEls);
 
-  function swiperFocus() {
+  function swipeFocus() {
     slideEls.forEach((slideEl) => {
+      console.log(slideEl);
       let btn = slideEl.querySelector('.btn');
-      console.log(btn);
+
       if (slideEl.classList.contains('swiper-slide-active')) {
         btn.setAttribute('tabindex', '0');
       } else if (slideEl.classList.contains('swiper-slide-duplicate-active')) {
+        btn.setAttribute('tabindex', '-1');
+      } else {
         btn.setAttribute('tabindex', '-1');
       }
     });
   }
 
   window.addEventListener('load', function() {
-    swiperFocus();
+    swipeFocus();
+  });
+
+  swiperBlock.on('activeIndexChange', function () {
+    swipeFocus();
+    console.log('событие запущено');
   });
 
   const swiperBlock2 = new Swiper('[data-id="swiper-tours"]', {
