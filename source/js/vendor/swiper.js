@@ -10218,8 +10218,10 @@ const swiper = () => {
     swipeFocus();
   });
 
-  swiperBlock.on('activeIndexChange', function () {
-    swipeFocus();
+  swiperBlock.on('activeIndexChange', function (s) {
+    setTimeout(() => {
+      swipeFocus();
+    })
     console.log('событие запущено');
   });
 
