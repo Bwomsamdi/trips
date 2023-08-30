@@ -150,6 +150,7 @@
 .tours__wrapper {
   position: relative;
   margin-bottom: 52px;
+  height: 100%;
 
   @media screen and (max-width: 1199px) {
     margin-bottom: 53px;
@@ -162,6 +163,7 @@
 
 .tours .swiper {
   position: static;
+  height: 100%;
 
   @media screen and (max-width: 1199px) {
     padding: 0 7px;
@@ -173,6 +175,9 @@
 }
 
 .tours .swiper-wrapper {
+  height: 100%;
+  align-items: end;
+
   @media screen and (max-width: 1199px) {
     z-index: 0;
   }
@@ -180,25 +185,42 @@
 
 .tours__slide {
   position: relative;
-  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 100%;
+  //flex-grow: 1;
+  //overflow-y: auto;
 
   @media (min-width: 1200px) {
     min-width: 380px;
   }
 }
 
-.tours__description-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
+.tours__slide::after {
+  content: "";
   position: absolute;
   bottom: 0;
   width: 380px;
   height: 100%;
-  padding: 28px 25px 28px 20px;
-  color: $color-default-white;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 61.9%, rgba(0, 0, 0, 0) 100%);
+}
+
+.tours__description-wrapper {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: end;
+  //position: absolute;
+  //bottom: 0;
+  width: 380px;
+  height: 100%;
+  padding: 28px 25px 27px 20px;
+  padding-top: 204px;
+  color: $color-default-white;
+  //background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 61.9%, rgba(0, 0, 0, 0) 100%);
   overflow-y: auto;
+  margin: auto;
 
   @media (min-width: 1200px) and (max-width: 1439px) {
     width: 100%;
@@ -216,14 +238,42 @@
 }
 
 .tours__slide img {
-  width: 100%;
+  //width: 100%;
+  @include visually-hidden();
+}
+
+.tours__slide1 {
+  min-width: 380px;
+  background-image: url("../img/photo1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $color-default-black;
+}
+
+.tours__slide2 {
+  min-width: 380px;
+
+  background-image: url("../img/photo2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $color-default-black;
+}
+
+.tours__slide3 {
+  min-width: 380px;
+
+  background-image: url("../img/photo3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $color-default-black;
 }
 
 .tours__description-wrapper ul {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
   padding-right: 3px;
+  z-index: 1;
 
   @media screen and (max-width: 1199px) {
     margin-bottom: 25px;
@@ -293,6 +343,7 @@
   font-weight: 700;
   line-height: 28px;
   margin-bottom: 20px;
+  z-index: 1;
 
   @media screen and (max-width: 767px) {
     font-size: 20px;
@@ -318,6 +369,7 @@
 .tours__description-wrapper dl {
   display: flex;
   justify-content: space-between;
+  z-index: 1;
 }
 
 .tours__description-wrapper dt {
