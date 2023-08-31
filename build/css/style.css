@@ -2676,7 +2676,7 @@ button,
   display: block;
 }
 
-.contacts__container p {
+.contacts__container .contacts__p {
   display: block;
   font-size: 16px;
   line-height: 24px;
@@ -3855,7 +3855,7 @@ footer {
   padding: 0 120px;
 }
 
-.training p {
+.training .training__p {
   font-size: 16px;
   line-height: 24px;
   max-width: 920px;
@@ -4563,7 +4563,7 @@ footer {
     font-size: 14px;
   }
 
-  .contacts__container p {
+  .contacts__container .contacts__p {
     font-size: 14px;
     line-height: 22px;
   }
@@ -4855,7 +4855,7 @@ footer {
     padding: 0 45px;
   }
 
-  .training p {
+  .training .training__p {
     max-width: 630px;
     margin-bottom: 66px;
     padding-left: 45px;
@@ -4894,7 +4894,7 @@ footer {
 
   .training__slide img {
     width: 100%;
-    margin-bottom: 18px;
+    margin-bottom: 17px;
   }
 
   .training__title {
@@ -5079,7 +5079,7 @@ footer {
     margin-bottom: 7px;
   }
 
-  .contacts__container p {
+  .contacts__container .contacts__p {
     max-width: 160px;
     line-height: 20px;
   }
@@ -5496,7 +5496,7 @@ footer {
     padding: 0 15px;
   }
 
-  .training p {
+  .training .training__p {
     font-size: 14px;
     line-height: 20px;
     max-width: 100%;
@@ -5542,6 +5542,7 @@ footer {
 
   .training__slide img {
     width: 100%;
+    margin-bottom: 18px;
   }
 
   .training__title {
